@@ -8,7 +8,7 @@ import { useRef, useEffect, useState } from "react";
 const Navbar = () => (
   <nav className="bg-gray-900 text-white p-4 flex flex-wrap justify-between items-center shadow-md fixed w-full top-0 z-50">
     <div className="flex items-center space-x-2">
-      <img src="./src/assets/logo.png" className='h-10 rounded-[50%]' alt="logo" />
+      <img src="/assets/logo.png" className='h-10 rounded-[50%]' alt="logo" />
       <span className="text-xl font-bold">VaishnaviTechnosis</span>
     </div>
     <div className="space-x-0 sm:space-x-4 flex flex-col sm:flex-row gap-2 sm:gap-0 text-center">
@@ -29,7 +29,7 @@ const Home = () => (
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
   >
-    <img src="./src/assets/logo.png" alt="Robotics Banner" className="rounded-[40%] mx-auto mb-8 shadow-lg h-40 sm:h-55" />
+    <img src="/assets/logo.png" alt="Robotics Banner" className="rounded-[40%] mx-auto mb-8 shadow-lg h-40 sm:h-55" />
     <h1 className="text-5xl font-bold mb-12">Empowering Industries with Robotic Automation</h1>
     <p className="text-lg mb-8 max-w-3xl mx-auto">VaishnaviTechnosis transforms manual processes into intelligent automation solutions using state-of-the-art robotics technology.</p>
     <a href="#services" className="bg-cyan-500 px-6 py-2 rounded-xl text-white hover:bg-cyan-600 transition">Explore Services</a>
@@ -42,7 +42,7 @@ const About = () => (
     <h2 className="text-4xl font-bold mb-6">About Us</h2>
     <div className="grid md:grid-cols-2 gap-6 items-center">
       <p className="text-lg">VaishnaviTechnosis is dedicated to revolutionizing the industrial sector by integrating cutting-edge robotic systems...</p>
-      <img src="./src/assets/robot.png" alt="About Robotics" className="rounded-2xl shadow-md" />
+      <img src="/assets/robot.png" alt="About Robotics" className="rounded-2xl shadow-md" />
     </div>
   </motion.section>
 );
@@ -54,30 +54,30 @@ const Projects = () => {
       title: "Smart Assembly Line",
       desc: "Automated an entire vehicle assembly line using collaborative robots.",
       images: [
-        "./src/assets/presslayout.jpeg",
-        "./src/assets/pickplace.jpeg",
-        "./src/assets/roboticline.jpeg",
+        "/assets/presslayout.jpeg",
+        "/assets/pickplace.jpeg",
+        "/assets/roboticline.jpeg",
       ],
     },
     {
       title: "AI-Based Quality Inspection",
       desc: "Developed AI vision systems for defect detection in manufacturing.",
-      images: ["./src/assets/ai-quality-checking.webp",
-        "./src/assets/qc.png"
+      images: ["/assets/ai-quality-checking.webp",
+        "/assets/qc.png"
       ],
     },
     {
       title: "Robotic Packaging System",
       desc: "Implemented high-speed robotic arms for packaging in food industry.",
-      images: ["./src/assets/robot-cell.png",
-        "./src/assets/robot-cell2.webp"
+      images: ["/assets/robot-cell.png",
+        "/assets/robot-cell2.webp"
       ],
     },
     {
       title: "Robotic Welding Station",
       desc: "Integrated robotic welders with precision controls in metal fabrication.",
-      images: ["./src/assets/robotic-welding.jpg",
-        "./src/assets/robotic-welding.jpg"
+      images: ["/assets/robotic-welding.jpg",
+        "/assets/robotic-welding.jpg"
       ],
       
       
@@ -176,37 +176,37 @@ const Services = () => (
         {
           title: 'Robotic Process Automation',
           desc: 'Automate repetitive tasks with intelligent software bots.',
-          img: './src/assets/rpa.jpg'
+          img: '/assets/rpa.jpg'
         },
         {
           title: 'Industrial Robotics Integration',
           desc: 'Deploy advanced robotics into your production line.',
-          img: './src/assets/industrialrobotics.jpg'
+          img: '/assets/industrialrobotics.jpg'
         },
         {
           title: 'AI & Machine Vision',
           desc: 'Use AI to enhance quality control and process optimization.',
-          img: './src/assets/aimachine.webp'
+          img: '/assets/aimachine.webp'
         },
         {
           title: 'Custom Robotics Development',
           desc: 'Tailor-built robotic systems for unique industrial needs.',
-          img: './src/assets/customrobotics.webp'
+          img: '/assets/customrobotics.webp'
         },
         {
           title: 'Smart Factory Solutions',
           desc: 'IoT-enabled robotics for real-time smart manufacturing.',
-          img: './src/assets/sfs.jpg'
+          img: '/assets/sfs.jpg'
         },
         {
           title: 'Maintenance & Support',
           desc: '24/7 support and preventive maintenance for robotics systems.',
-          img: './src/assets/maintainance.jpg'
+          img: '/assets/maintainance.jpg'
         },
         {
           title: 'Robotic Spares & Repair',
           desc: 'High-quality robotic spare parts and repair services to keep your systems running.',
-          img: './src/assets/maintainance.jpg'
+          img: '/assets/maintainance.jpg'
         }
       ].map((service, i) => (
         <motion.div key={i} className="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition"
@@ -304,7 +304,7 @@ const Contact = () => {
         </form>
 
         <video className="rounded-xl shadow-lg w-full md:w-[600px]" controls>
-          <source src="./src/assets/video11.mp4" type="video/mp4" />
+          <source src="/assets/video11.mp4" type="video/mp4" />
         </video>
       </div>
     </motion.section>
