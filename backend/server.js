@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 connectDB();
 
-app.use(cors({ origin: 'https://vaishnavitechnosis.vercel.app', // your frontend domain
+app.use(cors({ origin: 'https://vaishnavi-technosis.vercel.app', // your frontend domain
   credentials: true }));
 app.use(express.json());
 
