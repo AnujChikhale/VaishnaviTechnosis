@@ -12,7 +12,7 @@ app.use(cors({ origin: 'https://vaishnavi-technosis.vercel.app', // your fronten
   credentials: true }));
 app.use(express.json());
 
-app.use('/api', contactRoutes);
+app.use('/api/contact', contactRoutes);
 
 app.get('/', (req, res) => res.send('🚀 Server is up and running'));
 
