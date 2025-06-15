@@ -3,6 +3,14 @@ import "keen-slider/keen-slider.min.css";
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
+import { Helmet } from 'react-helmet';
+
+<Helmet>
+  <title>VaishnaviTechnosis | Robotic Automation Company in India</title>
+  <meta name="description" content="VaishnaviTechnosis is a leading robotic automation company in India specializing in custom industrial robots, AI vision system integration, and smart factory automation solutions." />
+  <meta name="keywords" content="robotic automation company in India, custom industrial robots, AI vision system integration, smart factory automation solutions, industrial robotics India, factory automation services" />
+</Helmet>
+
 
 const Navbar = () => (
   <nav className="bg-gray-900 text-white p-4 flex flex-wrap justify-between items-center shadow-md fixed w-full top-0 z-50">
