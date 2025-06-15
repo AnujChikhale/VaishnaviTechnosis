@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vaishnavi-technosis.vercel.app/sitemap.xml
