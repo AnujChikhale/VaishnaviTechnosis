@@ -8,11 +8,27 @@ dotenv.config();
 const app = express();
 connectDB();
 
-app.use(cors({ origin: 'https://vaishnavi-technosis.vercel.app', // your frontend domain
-  credentials: true }));
+const allowedOrigins = [
+  'https://vaishnavi-technosis.vercel.app',
+  'https://vaishnavitechnosis.com',
+  'https://www.vaishnavitechnosis.com'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
+
 
 app.get('/', (req, res) => res.send('🚀 Server is up and running'));
 
