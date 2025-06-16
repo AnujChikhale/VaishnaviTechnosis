@@ -37,5 +37,10 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message });
 });
 
+app.get('/api/ping', (req, res) => {
+  res.status(200).send('pong');
+});
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🌍 Server running on port ${PORT}`));
