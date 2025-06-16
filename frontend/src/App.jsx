@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
+import Blog from './components/Blog';
+
 
 <Helmet>
   <title>VaishnaviTechnosis | Robotic Automation Company in India</title>
@@ -23,6 +25,8 @@ const Navbar = () => (
       <a href="#about" className="hover:text-cyan-400">About</a>
       <a href="#projects" className="hover:text-cyan-400">Projects</a>
       <a href="#services" className="hover:text-cyan-400">Services</a>
+      <a href="#blog" className="hover:text-cyan-400">Blog</a>
+
       <a href="#contact" className="hover:text-cyan-400">Contact</a>
     </div>
   </nav>
@@ -342,6 +346,7 @@ const App = () => (
       <Projects />
       <Services />
       <Contact />
+      <Blog />
       <Footer />
     </div>
   </div>
