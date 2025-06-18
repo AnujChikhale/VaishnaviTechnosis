@@ -42,9 +42,14 @@ const Home = () => (
   >
     <img src="/assets/logo.png" alt="Robotics Banner" className="rounded-[40%] mx-auto mb-8 shadow-lg h-40 sm:h-55" />
     <h1 className="text-5xl font-bold mb-12">Empowering Industries with Robotics Automation</h1>
-    <p className="text-lg mb-8  mx-auto">At VaishnaviTechnosis, we specialize in transforming manual industrial operations into smart, automated systems. By integrating <em className="font-bold">advanced robotics and automations</em>, we enable industries to improve efficiency, quality, and scalability.
+    <p className="text-lg mb-8 mx-auto">
+  At <strong>VaishnaviTechnosis</strong>, we specialize in transforming manual industrial operations into smart, automated systems. By integrating <em className="font-bold">advanced robotics and automation</em>, we help industries improve efficiency, product quality, and operational scalability. 
 
-    Our expertise spans both hardware <em className="font-bold">automation and robotics</em> as well as intelligent software, giving businesses the competitive edge they need in a rapidly evolving digital landscape.</p>
+  Our expertise covers both hardware <em className="font-bold">automation and robotics</em> along with intelligent software, providing businesses a competitive edge in today’s rapidly evolving digital landscape. 
+
+  We also offer <em className="font-bold">low cost robotics automation</em> solutions that are reliable, scalable, and tailored to your unique manufacturing needs.
+</p>
+
 
     <h1 className="text-3xl font-bold mb-4">Explore Services</h1>
     <p className="mb-4">We offer a wide range of industrial services focused on <em className="font-bold">automation robotics</em> and smart factory solutions:</p>
@@ -111,7 +116,7 @@ const Projects = () => {
     {
       title: "Robotic Welding Station",
       desc: "We designed and integrated <strong>robotic welders</strong> with <strong>motion control</strong> for a metal fabrication facility. The system produced cleaner welds with 95% consistency and improved worker safety.",
-      images: ["/assets/robotic-welding.jpg",
+      images: ["/assets/welding-robotics-automation.jpg",
         "/assets/robotic-welding.jpg"
       ],
     },
