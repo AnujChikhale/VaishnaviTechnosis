@@ -8,7 +8,7 @@ import Blog from './components/Blog';
 
 
 <Helmet>
-  <title>VaishnaviTechnosis | Robotic Automation Company in India</title>
+  <title>VaishnaviTechnosis | Robotics Automation Company in India</title>
   <meta name="description" content="VaishnaviTechnosis is a leading robotic automation company in India specializing in custom industrial robots, AI vision system integration, and smart factory automation solutions." />
   <meta name="keywords" content="robotic automation company in India, custom industrial robots, AI vision system integration, smart factory automation solutions, industrial robotics India, factory automation services" />
 </Helmet>
@@ -41,8 +41,14 @@ const Home = () => (
     transition={{ duration: 0.8 }}
   >
     <img src="/assets/logo.png" alt="Robotics Banner" className="rounded-[40%] mx-auto mb-8 shadow-lg h-40 sm:h-55" />
-    <h1 className="text-5xl font-bold mb-12">Empowering Industries with Robotic Automation</h1>
-    <p className="text-lg mb-8 max-w-3xl mx-auto">VaishnaviTechnosis transforms manual processes into intelligent automation solutions using state-of-the-art robotics technology.</p>
+    <h1 className="text-5xl font-bold mb-12">Empowering Industries with Robotics Automation</h1>
+    <p className="text-lg mb-8  mx-auto">At VaishnaviTechnosis, we specialize in transforming manual industrial operations into smart, automated systems. By integrating <em className="font-bold">advanced robotics and automations</em>, we enable industries to improve efficiency, quality, and scalability.
+
+    Our expertise spans both hardware <em className="font-bold">automation and robotics</em> as well as intelligent software, giving businesses the competitive edge they need in a rapidly evolving digital landscape.</p>
+
+    <h1 className="text-3xl font-bold mb-4">Explore Services</h1>
+    <p className="mb-4">We offer a wide range of industrial services focused on <em className="font-bold">automation robotics</em> and smart factory solutions:</p>
+
     <a href="#services" className="bg-cyan-500 px-6 py-2 rounded-xl text-white hover:bg-cyan-600 transition">Explore Services</a>
   </motion.section>
 );
@@ -50,10 +56,28 @@ const Home = () => (
 const About = () => (
   <motion.section id="about" className="p-10 bg-white text-gray-900"
     initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-    <h2 className="text-4xl font-bold mb-6">About Us</h2>
+    <h2 className="text-4xl font-bold mb-6">About <strong>VaishnaviTechnosis</strong></h2>
     <div className="grid md:grid-cols-2 gap-6 items-center">
-      <p className="text-lg">VaishnaviTechnosis is dedicated to revolutionizing the industrial sector by integrating cutting-edge robotic systems...</p>
+      <p className="text-lg">We are a next-generation <strong>automation and robotics engineering</strong> company focused on building intelligent, automated solutions for modern industries. From small factories to large enterprises, we help you transition into the age of <strong>robotics automations</strong>.
+
+Our engineers are trained with deep knowledge of the <strong>robotics and automation engineering</strong> syllabus used at top institutions like the University School of <strong>Automation and Robotics</strong>. This strong academic foundation helps us create innovative real-world systems for complex industrial challenges.</p>
       <img src="/assets/robot.png" alt="About Robotics" className="rounded-2xl shadow-md" />
+    </div>
+    <h2 className="text-4xl font-bold mb-6">What is <strong>Robotics and Automation</strong>?</h2>
+    <div className="grid md:grid-cols-2 gap-6 items-center">
+      <p className="text-lg"><strong>Robotics and automation</strong> is the integration of mechanical systems, electronics, <strong>AI</strong>, and software to automate tasks that were traditionally performed by humans. These systems:
+
+<strong>Increase speed and accuracy</strong>
+
+<strong>Reduce human error</strong>
+
+<strong>Improve safety in hazardous environments</strong>
+
+<strong>Cut operational costs</strong>
+
+With the rise of <strong>robotics process automation</strong> and intelligent hardware, industries are becoming more productive and future-ready.
+
+For students and professionals, understanding what is <strong>robotics and automation</strong> is crucial to stay ahead in the evolving job market.</p>
     </div>
   </motion.section>
 );
@@ -63,7 +87,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Smart Assembly Line",
-      desc: "Automated an entire vehicle assembly line using collaborative robots.",
+      desc: "We fully automated a vehicle assembly line using collaborative robotics. The result: faster production, better consistency, and reduced labor cost. This project follows principles from modern <strong>robotics and automation engineering</strong> syllabi.",
       images: [
         "/assets/presslayout.jpeg",
         "/assets/pickplace.jpeg",
@@ -72,26 +96,24 @@ const Projects = () => {
     },
     {
       title: "AI-Based Quality Inspection",
-      desc: "Developed AI vision systems for defect detection in manufacturing.",
+      desc: "We implemented <strong>AI</strong>-driven <strong>machine vision</strong> systems for real-time defect detection. This solution replaced slow and inaccurate manual checks, improving throughput by 40%.",
       images: ["/assets/ai-quality-checking.webp",
         "/assets/qc.png"
       ],
     },
     {
       title: "Robotic Packaging System",
-      desc: "Implemented high-speed robotic arms for packaging in food industry.",
+      desc: "In the food industry, we deployed <strong>automation robotics</strong> for high-speed packaging and sorting. These robots improved hygiene, accuracy, and operational speed.",
       images: ["/assets/robot-cell.png",
         "/assets/robot-cell2.webp"
       ],
     },
     {
       title: "Robotic Welding Station",
-      desc: "Integrated robotic welders with precision controls in metal fabrication.",
+      desc: "We designed and integrated <strong>robotic welders</strong> with <strong>motion control</strong> for a metal fabrication facility. The system produced cleaner welds with 95% consistency and improved worker safety.",
       images: ["/assets/robotic-welding.jpg",
         "/assets/robotic-welding.jpg"
       ],
-      
-      
     },
   ];
 
@@ -123,7 +145,6 @@ const ProjectCard = ({ project }) => {
   const timerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
-  // Autoplay only while hovering
   useEffect(() => {
     if (isHovered) {
       timerRef.current = setInterval(() => {
@@ -144,7 +165,6 @@ const ProjectCard = ({ project }) => {
       className="relative p-6 bg-white rounded-2xl shadow hover:shadow-xl transition"
       whileHover={{ scale: 1.03 }}
     >
-      {/* Slider */}
       <div ref={sliderRef} className="keen-slider rounded-xl mb-4">
         {project.images.map((image, idx) => (
           <div className="keen-slider__slide" key={idx}>
@@ -157,7 +177,6 @@ const ProjectCard = ({ project }) => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
       <button
         onClick={() => instanceRef.current?.prev()}
         className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white/80 p-1 rounded-full shadow hover:bg-white"
@@ -173,7 +192,7 @@ const ProjectCard = ({ project }) => {
       </button>
 
       <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-      <p className="text-gray-700">{project.desc}</p>
+      <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: project.desc }} />
     </motion.div>
   );
 };
@@ -186,37 +205,37 @@ const Services = () => (
       {[
         {
           title: 'Robotic Process Automation',
-          desc: 'Automate repetitive tasks with intelligent software bots.',
+          desc: 'Our <strong>robotics process automation</strong> solutions streamline repetitive business processes like inventory updates, report generation, and order tracking. These software bots operate with unmatched precision and zero fatigue.',
           img: '/assets/rpa.jpg'
         },
         {
           title: 'Industrial Robotics Integration',
-          desc: 'Deploy advanced robotics into your production line.',
+          desc: 'We help factories evolve by embedding <strong>automation robotics</strong> into their systems. From <strong>robotic pick-and-place</strong> units to complex multi-axis machines, we integrate high-performance systems with ease and precision.',
           img: '/assets/industrialrobotics.jpg'
         },
         {
           title: 'AI & Machine Vision',
-          desc: 'Use AI to enhance quality control and process optimization.',
+          desc: 'We merge <strong>robotics and automation</strong> with <strong>AI</strong> to create real-time defect detection and sorting systems. Our <strong>machine vision robotics</strong> offer extreme accuracy and improve quality control like never before.',
           img: '/assets/aimachine.webp'
         },
         {
           title: 'Custom Robotics Development',
-          desc: 'Tailor-built robotic systems for unique industrial needs.',
+          desc: 'Need a specialized solution? Our <strong>robotics and automations engineering</strong> team creates tailored robotic systems for your unique production needs.',
           img: '/assets/customrobotics.webp'
         },
         {
           title: 'Smart Factory Solutions',
-          desc: 'IoT-enabled robotics for real-time smart manufacturing.',
+          desc: 'Our <strong>Smart Factory</strong> offering is the future of <strong>automation and robotics</strong>. With real-time dashboards, sensor integration, and predictive analysis, these environments use <strong>robotics automations</strong> to stay ahead of the curve.',
           img: '/assets/sfs.jpg'
         },
         {
           title: 'Maintenance & Support',
-          desc: '24/7 support and preventive maintenance for robotics systems.',
+          desc: 'We provide dedicated support for all deployed <strong>automation robotics</strong> systems. Preventive maintenance, on-call troubleshooting, and periodic system audits keep your automation running smoothly.',
           img: '/assets/maintainance.jpg'
         },
         {
           title: 'Robotic Spares & Repair',
-          desc: 'High-quality robotic spare parts and repair services to keep your systems running.',
+          desc: 'High-quality <strong>robotic spare parts</strong> and <strong>repair services</strong> to keep your systems running.',
           img: '/assets/maintainance.jpg'
         }
       ].map((service, i) => (
@@ -224,10 +243,61 @@ const Services = () => (
           whileHover={{ scale: 1.03 }}>
           <img src={service.img} alt={service.title} className="w-full h-40 object-cover rounded-xl mb-4" />
           <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-          <p className="text-gray-700">{service.desc}</p>
+          <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: service.desc }} />
         </motion.div>
       ))}
     </div>
+  </motion.section>
+);
+
+const Highlights = () => (
+  <motion.section
+    id="blog"
+    className="p-10 bg-gray-50 text-gray-800"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.2 }}
+  >
+    <h2 className="text-4xl font-bold mb-6 text-center">
+      📘 Empowering the Future with <strong>Robotics Intelligence</strong>
+    </h2>
+    <p className="text-lg mb-6 text-center max-w-4xl mx-auto">
+      At <strong>VaishnaviTechnosis</strong>, knowledge drives our <strong>robotics and automations</strong> journey. From cutting-edge <strong>robotics and automation course</strong> material to in-depth understanding of <strong>automation robotics</strong> trends and the latest <strong>robotics process automation</strong> tools — we combine theory with precision engineering.
+    </p>
+
+    <h3 className="text-3xl font-semibold mt-10 mb-4">💡 Why <strong>VaishnaviTechnosis</strong>?</h3>
+    <ul className="space-y-3 list-disc list-inside">
+      <li>
+        <strong>✅ Domain Experts:</strong> We bring deep expertise in <strong>robotics and automation engineering</strong> — from design to deployment.
+      </li>
+      <li>
+        <strong>✅ Scalable & Smart:</strong> Our <strong>robotics automations</strong> adapt to your industry needs — whether precision, speed, or <strong>AI vision</strong> integration.
+      </li>
+      <li>
+        <strong>✅ Curriculum-Driven R&D:</strong> We align with the latest <strong>robotics and automation engineering syllabus</strong> to ensure every solution is educationally and industrially relevant.
+      </li>
+      <li>
+        <strong>✅ Turnkey Deployment:</strong> Complete <strong>automation and robotics</strong> solutions — from consultation to cloud-connected machines.
+      </li>
+      <li>
+        <strong>✅ Learning-Backed Engineering:</strong> We mentor careers through the best <strong>robotics and automation courses</strong> and salary insights.
+      </li>
+    </ul>
+
+    <h3 className="text-3xl font-semibold mt-10 mb-4">👨‍🎓 For Students & Learners</h3>
+    <p className="text-lg mb-4">
+      Aspiring to join the world of <strong>robotics and automation engineering</strong>? We guide your academic journey with:
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>Live industrial exposure and internship opportunities</li>
+      <li>Hands-on experience with <strong>robotics process automation</strong> software and hardware</li>
+      <li>Consultation for selecting the ideal <strong>robotics and automation course</strong> based on your goals</li>
+      <li>Insightful data on <strong>robotics and automation engineering salary</strong> in India and abroad</li>
+    </ul>
+
+    <p className="text-xl font-bold mt-10 text-center">
+      🎯 At <strong>VaishnaviTechnosis</strong>, we don’t just build machines — we build futures.
+    </p>
   </motion.section>
 );
 
@@ -275,9 +345,19 @@ const Contact = () => {
       transition={{ delay: 0.4 }}
     >
       <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
+      <p>Have questions about <em className="font-bold">automation and robotics?</em></p>
       <p className="text-lg mb-8 text-gray-700">
         📞 Call us at: <a href="tel:9075849811" className="text-cyan-600 font-semibold hover:underline">9075849811</a>
       </p>
+      <p className="mb-4"><strong>📧 Send us a message</strong> — We’re ready to help you explore the future of <em className="font-bold">robotics and automation engineering.</em>
+
+We also offer informational sessions for those seeking insights into:
+
+The best <em className="font-bold">robotics and automation</em> course
+
+Understanding <em className="font-bold">robotics and automation</em> salary trends
+
+Reviewing the <em className="font-bold ">automation and robotics engineering</em> syllabus</p>
       <div className="flex flex-col md:flex-row items-start gap-10">
         <form className="w-full max-w-xl space-y-4" onSubmit={handleSubmit}>
           <input
@@ -316,7 +396,7 @@ const Contact = () => {
 
         <video className="rounded-xl shadow-lg w-full md:w-[600px]" controls>
           <source src="/assets/video11.mp4" type="video/mp4" />
-        </video>
+        </video>  
       </div>
     </motion.section>
   );
@@ -345,6 +425,7 @@ const App = () => (
       <About />
       <Projects />
       <Services />
+      <Highlights/>
       <Contact />
       <Blog />
       <Footer />
