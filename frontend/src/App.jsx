@@ -224,9 +224,14 @@ const Services = () => (
           img: '/assets/aimachine.webp'
         },
         {
-          title: 'Custom Robotics Development',
-          desc: 'Need a specialized solution? Our <strong>robotics and automations engineering</strong> team creates tailored robotic systems for your unique production needs.',
-          img: '/assets/customrobotics.webp'
+          title: 'PLC Programming',
+          desc: 'We provide professional PLC programming services tailored for industrial automation.Our solutions enable seamless control and real-time monitoring of machines and systems.We specialize in integrating PLCs with robotics to enhance productivity and precision.Supporting top platforms like Siemens, Allen-Bradley, and Mitsubishi.Optimize your operations with reliable, scalable automation logic.',
+          img: '/assets/plc.jpg'
+        },
+        {
+          title: 'Electric Panel wiring',
+          desc: 'We offer expert electric panel wiring services for industrial and automation projects.Our panels are designed for safety, efficiency, and seamless machine integration.We ensure precise wiring and layout to support robotics and automated systems.Using quality components and standards-compliant practices.Enhance reliability and control with professionally wired electric panels.',
+          img: '/assets/electricpanelwiring.jpeg'
         },
         {
           title: 'Smart Factory Solutions',
@@ -241,7 +246,7 @@ const Services = () => (
         {
           title: 'Robotic Spares & Repair',
           desc: 'High-quality <strong>robotic spare parts</strong> and <strong>repair services</strong> to keep your systems running.',
-          img: '/assets/maintainance.jpg'
+          img: '/assets/robotspare.png'
         }
       ].map((service, i) => (
         <motion.div key={i} className="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition"
