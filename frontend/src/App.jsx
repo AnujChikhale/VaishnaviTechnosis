@@ -47,7 +47,7 @@ const Home = () => (
 
   Our expertise covers both hardware <em className="font-bold">automation and robotics</em> along with intelligent software, providing businesses a competitive edge in today’s rapidly evolving digital landscape. 
 
-  We also offer <em className="font-bold">low cost robotics automation</em> solutions that are reliable, scalable, and tailored to your unique manufacturing needs.
+  We also offer <em className="font-bold">low cost robotics automation</em> solutions that are reliable, scalable, and tailored to your unique manufacturing needs and also provide <em className="font-bold">SCADA and HMI integration</em>.
 </p>
 
 
@@ -238,6 +238,12 @@ const Services = () => (
           desc: 'Our <strong>Smart Factory</strong> offering is the future of <strong>automation and robotics</strong>. With real-time dashboards, sensor integration, and predictive analysis, these environments use <strong>robotics automations</strong> to stay ahead of the curve.',
           img: '/assets/sfs.jpg'
         },
+        {
+          title: 'HMI & SCADA Integration',
+          desc: 'Our <strong>HMI & SCADA Integration</strong> services bridge the gap between operators and automation systems. By delivering real-time visualizations, control interfaces, and data monitoring, we enable efficient decision-making and seamless management of complex <strong>robotics automation</strong> environments.',
+          img: '/assets/HMI.jpg'
+        },
+        
         {
           title: 'Maintenance & Support',
           desc: 'We provide dedicated support for all deployed <strong>automation robotics</strong> systems. Preventive maintenance, on-call troubleshooting, and periodic system audits keep your automation running smoothly.',
