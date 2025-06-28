@@ -320,6 +320,7 @@ const Highlights = () => (
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isSending, setIsSending] = useState(false); // New loading state
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -330,6 +331,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSending(true); // Start loading
 
     try {
       const res = await fetch('https://vaishnavitechnosis.onrender.com/api/contact', {
@@ -349,6 +351,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Fetch error:', error);
       alert('❌ Something went wrong. Please try again.');
+    } finally {
+      setIsSending(false); // Stop loading
     }
   };
 
@@ -404,9 +408,12 @@ Reviewing the <em className="font-bold ">automation and robotics engineering</em
           ></textarea>
           <button
             type="submit"
-            className="bg-cyan-600 text-white px-6 py-2 rounded-xl hover:bg-cyan-700 transition"
+            disabled={isSending}
+            className={`px-6 py-2 rounded-xl transition text-white ${
+              isSending ? 'bg-gray-400 cursor-not-allowed' : 'bg-cyan-600 hover:bg-cyan-700'
+            }`}
           >
-            Send Message
+            {isSending ? 'Sending...' : 'Send Message'}
           </button>
         </form>
 
@@ -417,6 +424,7 @@ Reviewing the <em className="font-bold ">automation and robotics engineering</em
     </motion.section>
   );
 };
+
 
 
 const Footer = () => (
