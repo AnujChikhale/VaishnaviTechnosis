@@ -91,7 +91,7 @@ For students and professionals, understanding what is <strong>robotics and autom
 const Projects = () => {
   const projects = [
     {
-      title: "Smart Assembly Line",
+      title: "...Smart Assembly Line",
       desc: "We fully automated a vehicle assembly line using collaborative robotics. The result: faster production, better consistency, and reduced labor cost. This project follows principles from modern <strong>robotics and automation engineering</strong> syllabi.",
       images: [
         "/assets/presslayout.jpeg",
@@ -100,25 +100,50 @@ const Projects = () => {
       ],
     },
     {
-      title: "AI-Based Quality Inspection",
+      title: "...AI-Based Quality Inspection",
       desc: "We implemented <strong>AI</strong>-driven <strong>machine vision</strong> systems for real-time defect detection. This solution replaced slow and inaccurate manual checks, improving throughput by 40%.",
       images: ["/assets/ai-quality-checking.webp",
         "/assets/qc.png"
       ],
     },
     {
-      title: "Robotic Packaging System",
+      title: "...Robotic Packaging System",
       desc: "In the food industry, we deployed <strong>automation robotics</strong> for high-speed packaging and sorting. These robots improved hygiene, accuracy, and operational speed.",
       images: ["/assets/robot-cell.png",
         "/assets/robot-cell2.webp"
       ],
     },
     {
-      title: "Robotic Welding Station",
+      title: "...Robotic Welding Station",
       desc: "We designed and integrated <strong>robotic welders</strong> with <strong>motion control</strong> for a metal fabrication facility. The system produced cleaner welds with 95% consistency and improved worker safety.",
       images: ["/assets/welding-robotics-automation.jpg",
         "/assets/robotic-welding.jpg"
       ],
+    },
+    {
+      title: "...Implementation of Robotic Arm in CNC Machining Line for Increased Productivity",
+      desc: "We designed and integrated <strong>Yaskawa robotic arms</strong> with <strong>CNC machines</strong> to automate loading and unloading operations. The system improved cycle time, ensured 95% consistency, and reduced manual labor.",
+      images: ["assets/CNC.jpeg"]
+    },
+    {
+      title: "...Robotic Spot Welding Automation for Metal Assembly Line",
+      desc: "We deployed and integrated a <strong>KUKA robotic arm</strong> with <strong>spot welding fixtures</strong> to automate welding in a high-volume assembly line. The solution achieved 98% weld accuracy, enhanced production speed, and improved safety.",
+      images: ["assets/spotwelding.jpeg"]
+    },
+    {
+      title: "...Refurbishment and Deployment of Industrial Robotic Arms",
+      desc: "We refurbished and tested <strong>FANUC industrial robots</strong> for redeployment in automation lines across manufacturing units. This cost-effective solution extended robot lifespan and optimized capital investment by over 60%.",
+      images: ["assets/refurbishedrobot.jpeg"]
+    },
+    {
+      title: "...Design and Assembly of Custom Pneumatic Gripper EOAT",
+      desc: "We designed and assembled a <strong>custom pneumatic gripper</strong> using <strong>modular EOAT components</strong> for precise multi-point part handling. The tool enabled accurate pick-and-place operations with minimal air loss and high repeatability.",
+      images: ["assets/pneumaticgripper.jpeg"]
+    },
+    {
+      title: "...Heavy-Duty Rail-Guided Transfer Trolley for Precision Handling",
+      desc: "We implemented a <strong>custom rail-guided transfer trolley system</strong> with <strong>modular track alignment</strong> to enable safe and accurate movement of large tooling fixtures. Designed for shop floor automation, this solution ensures <strong>precise linear positioning</strong> and improved workflow efficiency in high-load applications.",
+      images: ["assets/trolley.jpeg"]
     },
   ];
 
