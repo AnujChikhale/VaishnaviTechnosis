@@ -12,7 +12,7 @@ export const submitForm = async (req, res) => {
     // Setup email transporter
     const transporter = nodemailer.createTransport({
       service: process.env.EMAIL_SERVICE,
-      auth: {
+      auth: { 
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
       }

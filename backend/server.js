@@ -6,7 +6,7 @@ import contactRoutes from './routes/contact.js';
 
 dotenv.config();
 const app = express();
-connectDB();
+connectDB(process.env.MONGO_URI);
 
 const allowedOrigins = [
   'https://vaishnavi-technosis.vercel.app',
