@@ -10,7 +10,7 @@ import Blog from './components/Blog';
 <Helmet>
   <title>VaishnaviTechnosis | Robotics Automation Company in India</title>
   <meta name="description" content="VaishnaviTechnosis is a leading robotic automation company in India specializing in custom industrial robots, AI vision system integration, and smart factory automation solutions." />
-  <meta name="keywords" content="robotic automation company in India, custom industrial robots, AI vision system integration, smart factory automation solutions, industrial robotics India, factory automation services" />
+  <meta name="keywords" content="robotic automation company in India,robotic automation company in pune, custom industrial robots, AI vision system integration, smart factory automation solutions, industrial robotics India, factory automation services" />
 </Helmet>
 
 
