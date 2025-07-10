@@ -1,10 +1,11 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Linkedin } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import Blog from './components/Blog';
+import { Youtube } from 'lucide-react';
 
 
 <Helmet>
@@ -460,9 +461,25 @@ const Footer = () => (
     transition={{ delay: 0.3, duration: 0.6 }}
   >
     <div>&copy; {new Date().getFullYear()} VaishnaviTechnosis. All rights reserved.</div>
-    <a href="https://www.youtube.com/@VaishnaviTechnosis" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">
-      Visit our YouTube Channel
+    <div className="flex gap-4">
+    <a
+      href="https://www.youtube.com/@VaishnaviTechnosis"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-red-600 hover:text-red-800  transition-colors duration-300"
+    >
+      <Youtube size={24} />
     </a>
+    <a
+      href="https://www.linkedin.com/in/vaishnavi-technosis-7233bb11a/?originalSubdomain=in"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+    >
+      <Linkedin size={24} />
+    </a>
+  
+    </div>
   </motion.footer>
 );
 
