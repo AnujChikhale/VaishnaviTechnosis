@@ -306,8 +306,8 @@ const Highlights = () => (
       At <strong>VaishnaviTechnosis</strong>, knowledge drives our <strong>robotics and automations</strong> journey. From cutting-edge <strong>robotics and automation course</strong> material to in-depth understanding of <strong>automation robotics</strong> trends and the latest <strong>robotics process automation</strong> tools — we combine theory with precision engineering.
     </p>
 
-    <h3 className="text-3xl font-semibold mt-10 mb-4">💡 Why <strong>VaishnaviTechnosis</strong>?</h3>
-    <ul className="space-y-3 list-disc list-inside">
+    <h3 className="text-3xl text-center font-semibold mt-10 mb-4">💡 Why <strong>VaishnaviTechnosis</strong>?</h3>
+    <ul className="space-y-3 list-disc text-center list-inside">
       <li>
         <strong>✅ Domain Experts:</strong> We bring deep expertise in <strong>robotics and automation engineering</strong> — from design to deployment.
       </li>
@@ -325,8 +325,8 @@ const Highlights = () => (
       </li>
     </ul>
 
-    <h3 className="text-3xl font-semibold mt-10 mb-4">👨‍🎓 For Students & Learners</h3>
-    <p className="text-lg mb-4">
+    <h3 className="text-3xl font-semibold mt-10 text-center mb-4">👨‍🎓 For Students & Learners</h3>
+    <p className="text-lg mb-4 text-center">
       Aspiring to join the world of <strong>robotics and automation engineering</strong>? We guide your academic journey with:
     </p>
     <ul className="list-disc list-inside space-y-2">

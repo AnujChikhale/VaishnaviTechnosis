@@ -19,13 +19,19 @@ const blogPosts = [
     date: 'May 5, 2025',
     excerpt: 'Smart factories combine IoT and robotics to create more intelligent, self-regulating systems.',
     link: '#'
+  },
+  {
+  title: 'PLC Automation: The Brain Behind Modern Industrial Systems',
+  date: 'July 10, 2025',
+  excerpt: 'Discover how PLCs power robotics automation by ensuring real-time control, reliability, and seamless integration in smart factories.',
+  link: '#'
   }
 ];
 
 const Blog = () => (
   <motion.section
     id="blog"
-    className="p-10 bg-gray-50"
+    className="p-10 bg-gray-200"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 0.3 }}
